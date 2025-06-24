@@ -1,0 +1,33 @@
+name: hive_crdt_flutter_example
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  crdt_lf: ^0.7.0+1
+  flutter:
+    sdk: flutter
+  hive_ce: ^2.11.3
+  hive_crdt_lf:
+    path: ../
+  path_provider: ^2.1.5
+  provider: ^6.1.5
+  uuid: ^4.5.1
+
+dev_dependencies:
+  build_runner: ^2.5.3
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+  hive_ce_generator: ^1.9.2
+
+dependency_overrides:
+  crdt_lf:
+    path: ../../crdt_lf
+
+flutter:
+  uses-material-design: true
